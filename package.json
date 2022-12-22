@@ -9,6 +9,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.1",
     "axios": "^1.2.1",
+    "chart.js": "^4.1.1",
     "cra-template": "1.2.0",
     "env-cmd": "^10.1.0",
     "firebase": "^9.15.0",
@@ -17,8 +18,11 @@
     "imagekitio-react": "^2.0.0",
     "md5": "^2.3.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.1.0",
     "react-cool-onclickoutside": "^1.7.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.0",
+    "react-quill": "^2.0.0",
     "react-router-dom": "^6.6.0",
     "react-scripts": "5.0.1"
   },
@@ -27,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "firebase-deploy": "firebase deploy",
+    "firebase-deploy": "firebase deploy --only hosting:claudia-blog",
     "init": "firebase init",
     "login": "firebase login",
     "logout": "firebase logout"

@@ -12,7 +12,7 @@ import { Snackbar } from "@mui/material/";
 import MuiAlert from "@mui/material/Alert";
 
 // contexts
-import { useNotification } from "../context/NotificationProvider";
+import { useNotification } from "../../context/NotificationProvider";
 
 const Notification = () => {
   const { notificationState } = useNotification();
