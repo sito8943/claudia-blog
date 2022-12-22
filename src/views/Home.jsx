@@ -2,7 +2,11 @@
 import Post from "./Section/Post";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Post />
+    </div>
+  );
 };
 
 export default Home;

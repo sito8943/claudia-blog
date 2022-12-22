@@ -1,3 +1,15 @@
-import { db } from "../firebase/db";
+// @ts-check
 
-export const fetch = async () => {};
+import { getTable } from "../firebase/db";
+
+/**
+ *
+ * @param {string} collection
+ * @returns
+ */
+export const fetch = async (collection) => {
+  const response = getTable(collection);
+  return response;
+};
+
+export const post = async () => {};
