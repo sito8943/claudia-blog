@@ -1,6 +1,6 @@
 // @ts-check
 
-import { getTable } from "../firebase/db";
+import { getValue } from "../services/post";
 
 /**
  *
@@ -8,7 +8,7 @@ import { getTable } from "../firebase/db";
  * @returns
  */
 export const fetch = async (collection) => {
-  const response = getTable(collection);
+  const response = await getValue("users", 1);
   return response;
 };
 
