@@ -17,6 +17,7 @@
     "imagekit": "^4.1.2",
     "imagekitio-react": "^2.0.0",
     "md5": "^2.3.0",
+    "mongodb": "^4.13.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.1.0",
     "react-cool-onclickoutside": "^1.7.0",
@@ -32,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "firebase-deploy": "firebase deploy --only hosting:claudia-blog",
-    "firebase-add":"firebase use --add",
+    "firebase-add": "firebase use --add",
     "init": "firebase init",
     "login": "firebase login",
     "logout": "firebase logout"
