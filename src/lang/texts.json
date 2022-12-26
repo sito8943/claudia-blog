@@ -8,6 +8,25 @@
       "Edit": "Edit catalog",
       "Insert": "New Post"
     },
+    "CookieBox": {
+      "Description": "Nuestro sitio usa cookies para analizar el tráfico de información y así mejorar tu experiencia",
+      "Link": "Ver politica de cookies",
+      "Accept": "Aceptar",
+      "Decline": "Denegar"
+    },
+    "Navbar": {
+      "Search": "Search...",
+      "Filters": {
+        "Products": "Products",
+        "Categories": "Categories",
+        "Menus": "Catalogs"
+      },
+      "NoHistory": "No recent searches...",
+      "Models": {
+        "menus": "Places",
+        "products": "Products"
+      }
+    },
     "NotFound": {
       "Title": "404 Not Found",
       "Description": "The page you are looking for cannot be found or has been removed",
@@ -59,6 +78,25 @@
     }
   },
   "es": {
+    "CookieBox": {
+      "Description": "Nuestro sitio usa cookies para analizar el tráfico de información y así mejorar tu experiencia",
+      "Link": "Ver politica de cookies",
+      "Accept": "Aceptar",
+      "Decline": "Denegar"
+    },
+    "Navbar": {
+      "Search": "Buscar...",
+      "Filters": {
+        "Products": "Productos",
+        "Categories": "Categorias",
+        "Menus": "Catálogos"
+      },
+      "NoHistory": "No hay búsquedas recientes...",
+      "Models": {
+        "menus": "Lugares",
+        "products": "Productos"
+      }
+    },
     "Buttons": {
       "Save": "Guardar",
       "Retry": "Recargar",
