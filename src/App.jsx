@@ -13,10 +13,15 @@ import light from "./assets/theme/light";
 import Notification from "./components/Notification/Notification";
 
 // layouts
+import Auth from "./layouts/Auth";
 import View from "./layouts/View";
 
 // views
 import Home from "./views/Home";
+import Login from "./views/Auth/Login";
+import Logout from "./views/Auth/Logout";
+import Register from "./views/Auth/Register";
+import NotFound from "./views/NotFound/NotFound";
 
 // contexts
 import { useMode } from "./context/ModeProvider";
@@ -41,6 +46,13 @@ function App() {
             <Route exact path="/" element={<View />}>
               <Route index element={<Home />} />
             </Route>
+            <Route exact path="/auth/" element={<Auth />}>
+              <Route index element={<Login />} />
+              <Route exact path="/auth/register-user" element={<Register />} />
+              <Route exact path="/auth/logout" element={<Logout />} />
+            </Route>
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </Box>

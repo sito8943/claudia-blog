@@ -5,18 +5,19 @@ import { Outlet } from "react-router-dom";
 // @mui components
 import { Box } from "@mui/material";
 
-// components
-import Navbar from "../components/Navbar/Navbar";
-
-const View = () => (
+const Auth = () => (
   <Box
     sx={{
+      display: "flex",
       minHeight: "100vh",
+      alignItems: "center",
+      justifyContent: "center",
     }}
   >
-    <Navbar />
-    <Outlet />
+    <Box>
+      <Outlet />
+    </Box>
   </Box>
 );
 
-export default View;
+export default Auth;
