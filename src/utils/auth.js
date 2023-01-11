@@ -56,7 +56,7 @@ export const createCookie = (name, expiration, value) => {
  * @param {string} cname - The name of the cookie you want to get.
  * @returns {any} The value of the cookie with the name cname.
  */
-export const getCookie = (cname) => {
+export const getCookie = (cname = "") => {
   const name = `${cname}=`;
   const decodedCookie = decodeURIComponent(document.cookie);
   const ca = decodedCookie.split(";");

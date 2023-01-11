@@ -18,7 +18,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import FilterAltIcon  from "@mui/icons-material/FilterAlt";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import FilterAltOffIcon from "@mui/icons-material/FilterAltOff";
