@@ -30,6 +30,10 @@
   justify-content: flex-end;
 }
 
+.link {
+  padding: 0 10px;
+}
+
 .links {
   gap: 20px;
   width: 100%;
@@ -73,4 +77,9 @@
 
 /* xl */
 @media (max-width: 1536px) {
+}
+
+.active {
+  border-radius: 25px;
+  background: dodgerblue;
 }
