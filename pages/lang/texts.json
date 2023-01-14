@@ -1,0 +1,60 @@
+{
+  "en": {
+    "Navbar": {
+      "Search": {
+        "placeholder": "Search..."
+      },
+      "Links": [
+        {
+          "label": "Home",
+          "href": "#"
+        },
+        {
+          "label": "About me",
+          "href": "#about-me"
+        },
+        {
+          "label": "Last posts",
+          "href": "#last-posts"
+        },
+        {
+          "label": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "label": "Contact",
+          "href": "#contact"
+        }
+      ]
+    }
+  },
+  "es": {
+    "Navbar": {
+      "Search": {
+        "placeholder": "Buscar..."
+      },
+      "Links": [
+        {
+          "label": "Inicio",
+          "href": "#"
+        },
+        {
+          "label": "Sobre mí",
+          "href": "#about-me"
+        },
+        {
+          "label": "Últimos posts",
+          "href": "#last-posts"
+        },
+        {
+          "label": "Galería",
+          "href": "#gallery"
+        },
+        {
+          "label": "Contacto",
+          "href": "#contact"
+        }
+      ]
+    }
+  }
+}
