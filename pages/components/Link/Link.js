@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-const Link = ({ children, href }) => {
+const Link = ({ children, href, className }) => {
   const router = useRouter();
 
   const handleClick = (e) => {
@@ -9,7 +9,7 @@ const Link = ({ children, href }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick}>
+    <a className={className} href={href} onClick={handleClick}>
       {children}
     </a>
   );

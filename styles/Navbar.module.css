@@ -1,4 +1,5 @@
 .navbar {
+  gap: 40px;
   height: 60px;
   width: 100%;
   display: flex;
@@ -8,48 +9,89 @@
   justify-content: space-between;
 }
 
-.search {
-  position: relative;
+.navbar div {
+  display: flex;
+  align-items: center;
 }
 
-.search .search-icon {
+.left {
+  gap: 20px;
+  justify-self: flex-start;
+  transition: all 500ms ease;
+}
+
+.expanded {
+  width: 100%;
+  flex: 1;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+}
+
+.search .icon {
+  width: 33px;
+  height: 34px;
   position: absolute;
-  left: 5px;
-  top: 5px;
+  border-radius: 100%;
+}
+
+.search .cancel {
+  position: absolute;
+  width: 33px;
+  height: 34px;
+  right: 0;
+  transition: opacity 500ms ease;
 }
 
 .search input {
-  padding: 5px 10px;
   border-radius: 20px;
+  transition: all 500ms ease;
 }
 
-.search input:hover {
+.search .collapse {
+  width: 33px;
+  padding: 5px 9px;
+}
+
+.search .expanded {
+  padding: 5px 30px;
+  padding-right: 25px;
 }
 
 .toggle {
 }
 
-.left {
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  justify-self: flex-start;
-}
-
 .right {
   gap: 20px;
-  display: flex;
   justify-self: flex-end;
+}
+
+.links {
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 500ms ease;
+}
+
+.catch {
+  padding: 5px 15px;
+  border-radius: 20px;
+  background-color: dodgerblue;
 }
 
 /* sm */
 @media (max-width: 600px) {
+  .right .link {
+    display: none;
+  }
 }
 
 /* md */
-@media (max-width: 900px) {
-  .right {
-    display: none;
+@media (max-width: 1000px) {
+  .closed {
+    display: none !important;
   }
   .navbar {
     padding: 0 20px;

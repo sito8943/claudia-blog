@@ -1,6 +1,7 @@
 {
   "en": {
     "Navbar": {
+      "CatchToAction": "Contact!",
       "Search": {
         "placeholder": "Search..."
       },
@@ -43,18 +44,15 @@
           "href": "#about-me"
         },
         {
-          "label": "Últimos posts",
-          "href": "#last-posts"
-        },
-        {
           "label": "Galería",
           "href": "#gallery"
         },
         {
-          "label": "Contacto",
-          "href": "#contact"
+          "label": "Newsletter",
+          "href": "#newsletter"
         }
-      ]
+      ],
+      "CatchToAction": "¡Contactar ahora!"
     }
   }
 }
