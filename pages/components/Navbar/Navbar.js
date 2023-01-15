@@ -13,7 +13,7 @@ import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../../styles/Navbar.module.css";
 
 // lang
-import { useLanguage } from "../../context/LanguageProvider";
+import { useLanguage } from "../../../context/LanguageProvider";
 import Drawer from "./Drawer/Drawer";
 
 const Navbar = () => {

@@ -34,6 +34,10 @@
   padding: 0 10px;
 }
 
+.link:hover {
+  color: dodgerblue;
+}
+
 .links {
   gap: 20px;
   width: 100%;
@@ -82,4 +86,8 @@
 .active {
   border-radius: 25px;
   background: dodgerblue;
+}
+
+.active:hover {
+  color: black;
 }

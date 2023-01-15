@@ -7,7 +7,7 @@ config.autoAddCss = false;
 import Script from "next/script";
 
 // contexts
-import { LanguageProvider } from "./context/LanguageProvider";
+import { LanguageProvider } from "../context/LanguageProvider";
 
 export default function App({ Component, pageProps }) {
   return (

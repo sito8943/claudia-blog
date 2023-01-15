@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "firebase-deploy": "firebase deploy --only hosting:claudia-blog",
+    "firebase-add": "firebase use --add",
+    "init": "firebase init",
+    "login": "firebase login",
+    "logout": "firebase logout",
+    "enable":"firebase experiments:enable webframeworks"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.7.4",
@@ -26,6 +32,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "firebase-tools": "^11.20.0",
     "postcss": "^8.4.21",
     "postcss-import": "^15.1.0",
     "tailwindcss": "^3.2.4"

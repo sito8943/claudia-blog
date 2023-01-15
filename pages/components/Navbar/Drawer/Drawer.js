@@ -11,7 +11,7 @@ import Link from "../../Link/Link";
 import styles from "../../../../styles/Drawer.module.css";
 
 // contexts
-import { useLanguage } from "../../../context/LanguageProvider";
+import { useLanguage } from "../../../../context/LanguageProvider";
 
 const Drawer = ({ visible, onClose }) => {
   const { languageState } = useLanguage();
