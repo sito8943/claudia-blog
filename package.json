@@ -9,10 +9,10 @@
     "lint": "next lint",
     "firebase-deploy": "firebase deploy --only hosting:claudia-blog",
     "firebase-add": "firebase use --add",
-    "init": "firebase init",
+    "init": "firebase init hosting",
     "login": "firebase login",
     "logout": "firebase logout",
-    "enable":"firebase experiments:enable webframeworks"
+    "enable": "firebase experiments:enable webframeworks"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.7.4",

@@ -18,9 +18,8 @@ import Drawer from "./Drawer/Drawer";
 
 const Navbar = () => {
   const router = useRouter();
-  const { languageState } = useLanguage();
 
-  console.log(router);
+  const { languageState } = useLanguage();
 
   const navbarText = useMemo(() => {
     return languageState.texts.Navbar;
@@ -36,11 +35,11 @@ const Navbar = () => {
         <button onClick={() => setShowDrawer(true)} className={styles.toggle}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <div className={styles.links}>
+        <div className={`${styles.links} flex`}>
           {navbarText.Links.map((item) => (
             <Link
-              className={`${styles.link} ${
-                router.asPath === `/${item.href}` ? styles.active : ""
+              className={`transition ease duration-150 hover:bg-orange-700 hover:text-white p-active rounded-20px ${
+                router.asPath === `/${item.href}` ? "bg-orange" : ""
               }`}
               key={item.label}
               href={item.href}
@@ -52,11 +51,16 @@ const Navbar = () => {
       </div>
 
       <div className={styles.right}>
-        <button onClick={() => setShowSearch(true)} className={styles.search}>
+        <button
+          onClick={() => setShowSearch(true)}
+          className="p-icon rounded-circle w-icon h-icon transition ease duration-150 hover:text-white hover:bg-orange-700"
+        >
           <FontAwesomeIcon icon={faSearch} />
         </button>
         <Link className={styles.contact} href="#contact">
-          <button className={styles.catch}>{navbarText.CatchToAction}</button>
+          <button className="p-active rounded-20px transition ease duration-150 bg-orange hover:text-white hover:bg-orange-700">
+            {navbarText.CatchToAction}
+          </button>
         </Link>
       </div>
     </nav>

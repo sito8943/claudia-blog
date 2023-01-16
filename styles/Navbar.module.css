@@ -30,26 +30,11 @@
   justify-content: flex-end;
 }
 
-.link {
-  padding: 0 10px;
-}
-
-.link:hover {
-  color: dodgerblue;
-}
-
 .links {
   gap: 20px;
   width: 100%;
-  display: flex;
   overflow: hidden;
   transition: all 500ms ease;
-}
-
-.catch {
-  padding: 5px 15px;
-  border-radius: 20px;
-  background-color: dodgerblue;
 }
 
 /* sm */
@@ -57,7 +42,7 @@
   .toggle {
     display: flex;
   }
-  .left .link {
+  .links {
     display: none;
   }
 }
@@ -85,9 +70,4 @@
 
 .active {
   border-radius: 25px;
-  background: dodgerblue;
-}
-
-.active:hover {
-  color: black;
 }

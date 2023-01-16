@@ -18,7 +18,6 @@
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  background-color: aliceblue;
   transition: all 700ms ease;
 }
 
@@ -37,5 +36,4 @@
   right: 20px;
   width: 40px;
   height: 40px;
-  color: crimson;
 }

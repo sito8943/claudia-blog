@@ -1,17 +1,14 @@
 {
   "hosting": {
-    "public": "build",
+    "site": "claudia-blog",
+    "source": ".",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "site": "claudia-blog"
-  },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
+    ]
   }
 }

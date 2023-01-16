@@ -1,4 +1,5 @@
 import React, { useMemo, useCallback, useEffect } from "react";
+import { useRouter } from "next/router";
 
 // @fortawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,6 +15,8 @@ import styles from "../../../../styles/Drawer.module.css";
 import { useLanguage } from "../../../../context/LanguageProvider";
 
 const Drawer = ({ visible, onClose }) => {
+  const router = useRouter();
+
   const { languageState } = useLanguage();
 
   const navbarText = useMemo(() => {
@@ -32,14 +35,22 @@ const Drawer = ({ visible, onClose }) => {
   }, [onResize]);
 
   return (
-    <div className={`${styles.container} ${!visible ? styles.off : ""}`}>
-      <div className={`${styles.drawer} ${!visible ? styles.close : ""}`}>
+    <div className={`${styles.container}  ${!visible ? styles.off : ""}`}>
+      <div
+        className={`${styles.drawer} bg-white ${!visible ? styles.close : ""}`}
+      >
         <button onClick={onClose} className={styles.button}>
           <FontAwesomeIcon icon={faTimes} />
         </button>
 
         {navbarText.Links.map((item) => (
-          <Link className={styles.link} key={item.label} href={item.href}>
+          <Link
+            className={`transition w-100% ease duration-150 hover:bg-orange-700 hover:text-white p-active rounded-20px ${
+              router.asPath === `/${item.href}` ? "bg-orange" : ""
+            }`}
+            key={item.label}
+            href={item.href}
+          >
             {item.label}
           </Link>
         ))}
