@@ -16,26 +16,48 @@ module.exports = {
     colors: {
       red: "#ef4444",
       orange: "#ff7849",
-      "orange-700": "#ea580c",
       white: "#ffffff",
       black: "#000000",
     },
 
     extend: {
+      colors: {
+        orange: "#ff7849",
+      },
       borderRadius: {
         "20px": "20px",
         circle: "100%",
       },
       width: {
+        full: "100%",
+        viewport: "100vw",
         icon: "35px",
-        "100%": "100%",
       },
       height: {
         icon: "35px",
+        full: "100%",
+        viewport: "100vh",
       },
       padding: {
         icon: "2px 2px 0 0",
         active: "5px 15px",
+        pc: "40px 10rem",
+        mobil: "40px",
+      },
+      fontWeight: {
+        h1: "bold",
+        h2: "bold",
+        h3: "400",
+        h4: "400",
+        h5: "400",
+      },
+      fontSize: {
+        "h1-lg": "6rem",
+        "h1-xs": "3rem",
+        h2: "3.75rem",
+        h3: "3rem",
+        h4: "2.125rem",
+        h5: "1.5rem",
       },
     },
   },

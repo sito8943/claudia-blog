@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className={`${styles.links} flex`}>
           {navbarText.Links.map((item) => (
             <Link
-              className={`transition ease duration-150 hover:bg-orange-700 hover:text-white p-active rounded-20px ${
+              className={`transition ease duration-150 hover:bg-red p-active rounded-20px ${
                 router.asPath === `/${item.href}` ? "bg-orange" : ""
               }`}
               key={item.label}
@@ -53,12 +53,12 @@ const Navbar = () => {
       <div className={styles.right}>
         <button
           onClick={() => setShowSearch(true)}
-          className="p-icon rounded-circle w-icon h-icon transition ease duration-150 hover:text-white hover:bg-orange-700"
+          className="p-icon rounded-circle w-icon h-icon transition ease duration-150 hover:bg-red"
         >
           <FontAwesomeIcon icon={faSearch} />
         </button>
         <Link className={styles.contact} href="#contact">
-          <button className="p-active rounded-20px transition ease duration-150 bg-orange hover:text-white hover:bg-orange-700">
+          <button className="p-active rounded-20px transition ease duration-150 bg-orange hover:bg-red">
             {navbarText.CatchToAction}
           </button>
         </Link>

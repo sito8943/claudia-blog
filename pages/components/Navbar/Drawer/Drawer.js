@@ -45,7 +45,7 @@ const Drawer = ({ visible, onClose }) => {
 
         {navbarText.Links.map((item) => (
           <Link
-            className={`transition w-100% ease duration-150 hover:bg-orange-700 hover:text-white p-active rounded-20px ${
+            className={`transition w-full ease duration-150 hover:bg-orange-700 hover:text-white p-active rounded-20px ${
               router.asPath === `/${item.href}` ? "bg-orange" : ""
             }`}
             key={item.label}
